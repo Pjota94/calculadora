@@ -14,7 +14,7 @@ const Schema = yup.object({
   mdr: yup
     .number()
     .typeError("Deve ser um numero")
-    .max(100, "Deve ser maior ou igual a 100"),
+    .max(100, "Deve ser menor ou igual a 100"),
 });
 
 export default Schema;
